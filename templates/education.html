@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Content</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            color: #fff;
+            padding-top: 20px;
+        }
+
+        #sidebar a {
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            color: #fff;
+        }
+
+        #sidebar a:hover {
+            background-color: #555;
+        }
+
+        #content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        iframe {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: none;
+            width: 100%;
+            /*max-width: 800px;*/
+            height: 650px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <div id="sidebar">
+        <a href="/">Home 🏠</a>
+        <a href="/resume">Resume 📄</a>
+    </div>
+
+
+    <div id="content">
+        <h1>This is my autodidactic education</h1>
+        <iframe src="{{ url_for('game1') }}" frameborder="0"></iframe>
+    </div>
+
+
+</body>
+
+
+</html>
